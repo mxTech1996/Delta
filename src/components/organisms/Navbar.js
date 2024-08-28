@@ -4,16 +4,10 @@ import { navData } from '@/data';
 import { NavbarV2, theme } from 'ecommerce-mxtech';
 import { useInformation } from '@/store/useInformation';
 
-const { useToken } = theme;
-
 const Navbar = () => {
   const { dataSite } = useInformation();
   const router = useRouter();
-  const {
-    token: { colorPrimary },
-  } = useToken();
 
-  console.log('icon', dataSite.iconImage);
   return (
     <NavbarV2
       linksProps={{

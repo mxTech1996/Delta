@@ -1,22 +1,19 @@
-
-export const pageName = "Delta";
-export const primaryColor = "#000000";
-export const backgroundColor = "#FFFFFF";
+export const pageName = 'Delta';
+export const primaryColor = '#000000';
+export const backgroundColor = '#FFFFFF';
 export const makeClearBackground = (color) => {
   return {
     backgroundColor: color,
-  }
-}
-
-
+  };
+};
 
 export const navData = [
   {
     href: '/#products',
-    label: "Let's start!",
+    label: 'Courses',
   },
   {
-    href: '/#our-services',
+    href: '/#features',
     label: 'Our Services',
   },
   {

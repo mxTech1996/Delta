@@ -9,6 +9,7 @@ import {
   Features,
   ListFeatures,
   GridImages,
+  FeaturesV2,
 } from 'ecommerce-mxtech';
 import { MdArchitecture } from 'react-icons/md';
 import { useRouter } from 'next/navigation';
@@ -47,6 +48,25 @@ export default function Home() {
         />
       </div>
       <div className='container mx-auto flex flex-col gap-20 my-24'>
+        <div className='flex flex-col' id='features'>
+          <FeaturesV2
+            features={dataSite.services.map((feature) => ({
+              title: feature.title,
+              description: feature.description,
+              src: feature.image,
+            }))}
+            onClickButton={() => {
+              router.push('/more-information');
+            }}
+            gridColumns={3}
+            backgroundColor={'#CBDCFF'}
+            borderRadius={10}
+            variant='text'
+            textColorDescription={'#CBDCFF'}
+            version='v2'
+          />
+        </div>
+
         <div>
           <GridImages
             stylesContainer={{
