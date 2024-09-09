@@ -24,11 +24,11 @@ export const navData = [
 
 export const footerData = [
   {
-    href: '/pdf/AP-MESANEX-MAYO-2024.pdf',
+    href: '/pdf/AP-DELTA.pdf',
     label: 'Privacy',
   },
   {
-    href: '/pdf/TYC-MESANEX-MAYO-2024.pdf',
+    href: '/pdf/TYC-DELTA.pdf',
     label: 'Terms',
   },
   {
